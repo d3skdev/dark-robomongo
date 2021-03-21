@@ -1,6 +1,9 @@
 #include <QApplication>
 #include <QDesktopWidget>
 
+#include <QFile>
+#include <QTextStream>
+
 #include <locale.h>
 
 // Header "mongo/util/net/sock" is needed for mongo::enableIPv6()
@@ -107,6 +110,12 @@ int main(int argc, char *argv[], char** envp)
     for(auto const& msgAndSeverity : Robomongo::RoboCrypt::roboCryptLogs())
         Robomongo::LOG_MSG(msgAndSeverity.first, msgAndSeverity.second);
 
+
+    QFile file(":qdarkstyle/style.qss");
+    file.open(QFile::ReadOnly | QFile::Text);
+    QTextStream stream(&file);
+    app.setStyleSheet(stream.readAll());
+    
     int rc = app.exec();
     rbm_ssh_cleanup();
     return rc;

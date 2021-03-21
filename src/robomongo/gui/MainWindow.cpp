@@ -611,7 +611,7 @@ namespace Robomongo
 
         createTabs();
         createStatusBar();
-        setWindowTitle("Robo 3T - " + QString(PROJECT_VERSION_SHORT));
+        setWindowTitle("Dark Robo 3T- " + QString(PROJECT_VERSION_SHORT));
         setWindowIcon(GuiRegistry::instance().mainWindowIcon());
 
         QTimer::singleShot(0, this, SLOT(manageConnections()));       
@@ -675,24 +675,7 @@ namespace Robomongo
         log->setText("Logs");
         log->setCheckable(true);
         log->setDefaultAction(_logDock->toggleViewAction());
-        log->setStyleSheet(QString(
-            "QToolButton {"
-            "   background-color: %1;"
-            "   border-style: outset;"
-            "   border-width: 1px;"
-            "   border-radius: 4px;"
-            "   border-color: %2;"
-            "   padding: 1px 10px 1px 10px;"
-            "} \n"
-            ""
-            "QToolButton:checked, QToolButton:pressed {"
-            "   background-color: %3;"
-            "   border-style: inset;"
-            "}")
-            .arg(buttonBgColor.name())
-            .arg(buttonBorderBgColor.name())
-            .arg(buttonPressedColor.name()));
-
+        
         statusBar()->insertWidget(0, log);
         statusBar()->setStyleSheet("QStatusBar::item { border: 0px solid black };");
     }

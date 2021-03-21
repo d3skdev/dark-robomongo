@@ -40,7 +40,7 @@ find_package(MongoDB REQUIRED)
 find_package(OpenSSL REQUIRED)
 
 if (SYSTEM_MACOSX)
-    set(CMAKE_OSX_DEPLOYMENT_TARGET 10.14)
+    set(CMAKE_OSX_DEPLOYMENT_TARGET 11.2)
     find_package(Qt5MacExtras REQUIRED)
 endif()
 

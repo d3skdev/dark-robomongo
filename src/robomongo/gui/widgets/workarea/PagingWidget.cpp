@@ -17,6 +17,7 @@ namespace
         button->setIcon(icon);
         button->setFixedSize(24, 24);
         button->setFlat(true);
+        button->setObjectName("tableIcon");
         return button;
     }
 }

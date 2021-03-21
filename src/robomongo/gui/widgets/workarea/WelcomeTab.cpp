@@ -12,11 +12,8 @@ namespace Robomongo {
         QWidget(parent), _parent(parent)
     {
         auto webView = new QWebEngineView(this);
-        QUrl const URL {
-            "http://files.studio3t.com/rm-feed_3t_io/1.4.3/index.html"        
-        };
         webView->setPage(new MyWebPage(this));
-        webView->page()->setUrl(URL);
+        webView->load(QUrl("qrc:///robomongo/welcome.html"));
         webView->setContextMenuPolicy(Qt::NoContextMenu);
 
         auto mainLayout = new QHBoxLayout;

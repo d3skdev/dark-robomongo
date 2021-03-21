@@ -10,7 +10,7 @@ namespace Robomongo
 
     QColor JSLexer::defaultPaper(int style) const
     {
-        return QColor(73, 76, 78);
+        return QColor(44,44,46);
         //return QColor(48, 10, 36); // Ubuntu-style background
     }
 

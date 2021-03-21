@@ -19,7 +19,8 @@ namespace
     auto const MONTH { QString::number(QDate::currentDate().month()) };
 
     const QString description {
-        "<h3>" PROJECT_NAME_TITLE " " PROJECT_VERSION 
+        "<h3>Dark Robo 3T v1.0</h3> By <a href=https://github.com/d3skdev/dark-robomongo>d3skdev</a>"
+        "<h3> Based on " PROJECT_NAME_TITLE " " PROJECT_VERSION 
             " (Build " BUILD_NUMBER + QString(" - ") + MONTH + "/" + YEAR + ")</h3>"
         "Shell-centric MongoDB management tool.<br/>"
         "<a href=\"https://" PROJECT_GITHUB_ISSUES "\">Submit</a> issues/proposals on GitHub.<br/>"
@@ -50,6 +51,7 @@ namespace
         "<b>Credits: <br/></b>"
         "Some icons are designed by Freepik <a href=https://www.flaticon.com>www.flaticon.com</a>"
         "<br/>"
+        "Dark theme by <a href=https://github.com/ColinDuquesnoy/QDarkStyleSheet>ColinDuquesnoy/QDarkStyleSheet</a>"
     };        
 }
 

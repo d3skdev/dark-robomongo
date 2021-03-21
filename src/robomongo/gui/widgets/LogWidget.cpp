@@ -47,7 +47,7 @@ namespace Robomongo
 
         // Nice color for the future: "#CD9800" :)
 
-        QColor textColor = QColor(Qt::black);
+        QColor textColor = QColor(Qt::white);
 
         if (level == mongo::logger::LogSeverity::Error())
             textColor = QColor("#CD0000");

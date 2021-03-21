@@ -55,7 +55,7 @@ namespace Robomongo
         _textChanged(false),
         _disableTextAndCursorNotifications(false)
     {
-        setStyleSheet("QFrame {background-color: rgb(255, 255, 255); border: 0px solid #c7c5c4;"
+        setStyleSheet("QFrame {border: 0px solid #c7c5c4;"
                       "border-radius: 0px; margin: 0px; padding: 0px;}");
 
         _queryText = new FindFrame(this);
@@ -306,7 +306,7 @@ namespace Robomongo
         _queryText->sciScintilla()->setPaper(QColor(255, 0, 0, 127));
         _queryText->sciScintilla()->setLexer(javaScriptLexer);
 
-        _queryText->sciScintilla()->setStyleSheet("QFrame { background-color: rgb(73, 76, 78); border: 1px solid #c7c5c4; border-radius: 4px; margin: 0px; padding: 0px;}");
+        _queryText->sciScintilla()->setStyleSheet("QFrame { background-color: rgb(73, 76, 78); border: 0px solid #c7c5c4; border-radius: 4px; margin: 0px; padding: 0px;}");
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(linesChanged()), SLOT(ui_queryLinesCountChanged())));
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(textChanged()), SLOT(onTextChanged())));
         VERIFY(connect(_queryText->sciScintilla(), SIGNAL(cursorPositionChanged(int, int)), SLOT(onCursorPositionChanged(int, int))));
@@ -391,7 +391,7 @@ namespace Robomongo
     TopStatusBar::TopStatusBar(const std::string &connectionName, const std::string &serverName, const std::string &dbName)
     {
         setContentsMargins(0, 0, 0, 0);
-        _textColor = palette().text().color().lighter(200);
+        _textColor = Qt::white;
 
         _currentConnectionLabel = new Indicator(GuiRegistry::instance().connectIcon(), 
             QString("<font color='%1'>%2</font>").arg(_textColor.name()).arg(connectionName.c_str()));

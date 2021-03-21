@@ -98,3 +98,8 @@ Desktop.ini
 $RECYCLE.BIN/
 .vscode/settings.json
 .vs/
+
+# Cache
+src/robomongo/.cmake/api/v1/query/cache-v2
+src/robomongo/.cmake/api/v1/query/cmakeFiles-v1
+src/robomongo/.cmake/api/v1/query/codemodel-v2

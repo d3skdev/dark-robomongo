@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo 3T Welcome Tab</title>
+    <link rel="stylesheet" href="https://use.typekit.net/vty7knv.css">
+    <style>
+        :root {
+            --s3t-brand-primary: #22b970;
+            --s3t-brand-primary-dark: #15a560;
+            --s3t-brand-secondary: #103b41;
+            --s3t-font-primary: white;
+            --s3t-font-light: #595959;
+            --s3t-grey-light: #dbdbdb;
+            --s3t-linear-gradient: linear-gradient(90deg, #208b85, #355882);
+            --s3t-box-shadow-primary: 0px 4px 4px rgba(0, 0, 0, 0.1);
+            --space-1: 0.5rem;
+            --space-2: 1rem;
+            --space-3: 2rem;
+            --space-4: 4rem;
+            font-size: 10px !important
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: proxima-nova, sans-serif;
+            background-color: rgb(28, 28, 30);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        li {
+            color: var(--s3t-font-primary);
+            font-weight: 200;
+            line-height: 1.5;
+            margin-bottom: 0;
+
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-top: 0;
+            margin-bottom: 8px
+        }
+
+        h2 {
+            font-size: 3rem;
+            line-height: 3.7rem;
+            font-weight: 300
+        }
+
+        h3 {
+            font-size: 2.4rem
+        }
+
+        h4 {
+            font-size: 2rem;
+            font-weight: 400
+        }
+
+        p {
+            font-size: 1.6rem
+        }
+
+        ul {
+            font-size: 2rem;
+            line-height: 2
+        }
+
+        a {
+            color: var(--s3t-brand-primary)
+        }
+
+        .mt0 {
+            margin-top: 0
+        }
+
+        .mt3 {
+            margin-top: var(--space-3)
+        }
+
+        .ml3,
+        .mx3 {
+            margin-left: var(--space-3)
+        }
+
+        .border-bottom {
+            border-bottom: 1px solid var(--s3t-grey-light)
+        }
+
+        .s3t-text {
+            color: var(--s3t-font-primary)
+        }
+
+        .s3t-button:hover {
+            background: var(--s3t-brand-primary-dark)
+        }
+
+        section {
+            transition: all .3s ease-in-out;
+            margin: 0;
+            padding: 36px 48px 48px
+        }
+
+        .section-container {
+            max-width: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 24px
+        }
+
+        @media screen and (max-width: 640px) {
+            .section-container {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .cols-1 {
+            display: grid;
+            grid-template-columns: 1fr
+        }
+
+        .cols-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            gap: 8px
+        }
+
+        @media screen and (max-width: 800px) {
+            .cols-2 {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .robo-s3t-block {
+            display: flex;
+            align-items: center
+        }
+
+        .robo-s3t-block .sm {
+            max-width: 120px
+        }
+
+        .robo-s3t-block .plus-sign {
+            width: 120px;
+            text-align: center;
+            font-size: 48px;
+            color: var(--s3t-brand-primary)
+        }
+
+
+        /*# sourceMappingURL=styles.8d15ec10.css.map */
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 class="s3t-text"> Need a more powerful GUI? Try Robo 3T's sibling: Studio 3T </h1>
+        <div class="cols-1 section-container">
+            <div class="mt3 robo-s3t-block"> <img class="sm"
+                    src="images/studio-3t-logo.png"> <span
+                    class="ml3 plus-sign">+</span> <img
+                    src="images/robo-3t-logo.png"> </div>
+            <h2>Enjoy new features like:</h2>
+            <ul class="mt0">
+                <li class="s3t-text">Import and export CSV, JSON, SQL and more</li>
+                <li class="s3t-text"> Generate flawless Javascript code from mongoshell and SQL </li>
+                <li class="s3t-text"> Build and debug aggregation queries stage by stage </li>
+                <li class="s3t-text"> Use Visual Query Builder to create powerful queries fast </li>
+                <li class="s3t-text">Write SQL queries direct to MongoDB</li>
+                <li class="s3t-text"> Connect to as many connection presets as you like </li>
+                <li class="s3t-text"> Explore schema stats visually and export documentation as CSV </li>
+                <li class="s3t-text"> Compare collections to identify differences for editing </li>
+                <li class="s3t-text"> Migrate whole databases easily between any SQL database and MongoDB </li>
+                <li class="s3t-text"> Use data masking to make production data safe for test and dev environments </li>
+            </ul>
+            <h4 class="mt0 s3t-text s3t-text--green"> <a
+                    href="https://studio3t.com/download/?utm_source=march-2021&utm_medium=welcomepage&utm_campaign=inapp-robo3t">
+                    Download Studio 3T</a> </h4>
+        </div>
+    </section>
+</body>
+
+</html>

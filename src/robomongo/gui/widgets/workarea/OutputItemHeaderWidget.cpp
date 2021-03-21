@@ -49,6 +49,7 @@ namespace Robomongo
         _textButton->setFixedSize(24, 24);
         _textButton->setFlat(true);
         _textButton->setCheckable(true);
+        _textButton->setObjectName("tableIcon");
 
         // Tree mode button
         _treeButton = new QPushButton(this);
@@ -58,7 +59,8 @@ namespace Robomongo
         _treeButton->setFixedSize(24, 24);
         _treeButton->setFlat(true);
         _treeButton->setCheckable(true);
-        _treeButton->setChecked(true);     
+        _treeButton->setChecked(true);  
+        _treeButton->setObjectName("tableIcon");   
 
         // Table mode button
         _tableButton = new QPushButton(this);
@@ -68,7 +70,8 @@ namespace Robomongo
         _tableButton->setFixedSize(24, 24);
         _tableButton->setFlat(true);
         _tableButton->setCheckable(true);
-        _tableButton->setChecked(true);       
+        _tableButton->setChecked(true);   
+        _tableButton->setObjectName("tableIcon");    
 
         // Custom mode button
         _customButton = new QPushButton(this);
@@ -78,6 +81,7 @@ namespace Robomongo
         _customButton->setFixedSize(24, 24);
         _customButton->setFlat(true);
         _customButton->setCheckable(true);
+        _customButton->setObjectName("tableIcon");
 
         // Create maximize button only if there are multiple results
         if (_multipleResults && !tabbedResults) {
@@ -93,9 +97,10 @@ namespace Robomongo
         auto queryWidget = dockWidget->getParentQueryWidget();
         
         _dockUndockButton = new QPushButton;
-        _dockUndockButton->setFixedSize(18, 18);
+        _dockUndockButton->setFixedSize(24, 24);
         _dockUndockButton->setFlat(true);
         _dockUndockButton->setHidden(true);
+        _dockUndockButton->setObjectName("tableIcon");
         applyDockUndockSettings(!dockWidget->isFloating());
         VERIFY(connect(_dockUndockButton, SIGNAL(clicked()), queryWidget, SLOT(dockUndock())));
 
