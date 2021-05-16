@@ -33,9 +33,9 @@ If "Yes" then:
 $ ln -s /usr/local/opt/openssl/lib/libssl.1.1.dylib /usr/local/lib/
 $ ln -s /usr/local/opt/openssl/lib/libcrypto.1.1.dylib /usr/local/lib/
 ```
-If "No" then compile and install the following package
+If "No" then install openssl, then repeat step 1
 ```
-http://www.openssl.org/source/openssl-1.1.1f.tar.gz
+brew install openssl
 ```
 
 
