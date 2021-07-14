@@ -25,17 +25,8 @@ Troubleshooting
 
 Try:
 ```
-$ ((ls /usr/local/opt/openssl/lib/libssl.1.1.dylib &&\
- ls /usr/local/opt/openssl/lib/libcrypto.1.1.dylib) && echo Yes) || echo No
-```
-If "Yes" then:
-```
-$ ln -s /usr/local/opt/openssl/lib/libssl.1.1.dylib /usr/local/lib/
-$ ln -s /usr/local/opt/openssl/lib/libcrypto.1.1.dylib /usr/local/lib/
-```
-If "No" then install openssl, then repeat step 1
-```
-brew install openssl
+$ ln -s /Applications/Dark\ Robo\ 3T.app/Contents/Frameworks/lib/libcrypto.1.1.dylib /usr/local/lib/
+$ ln -s /Applications/Dark\ Robo\ 3T.app/Contents/Frameworks/lib/libssl.1.1.dylib /usr/local/lib/
 ```
 
 
